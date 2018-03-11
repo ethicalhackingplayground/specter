@@ -27,3 +27,7 @@ Required Arguments:
   ## Examples
   
 > python specter.py --username "email" --wordlist "wordlist" --server "smtp server" --port "smtp port"
+
+### Problems
+Bruteforcing Gmail passwords is only possible if less secure apps is turned on, so you might need to use
+you're social engineering skills to get the victim to turn it on.
