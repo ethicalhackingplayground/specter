@@ -3,11 +3,11 @@ SMTP Password Bruteforcer
 
 ### Setup && Install
 
-> **python setup.py**
+ **python setup.py**
 
 ### Usage
 
-> **python specter.py -h**
+ **python specter.py -h**
 
 usage: specter.py [-h] --username U --wordlist W --server S --port P
 
