@@ -98,6 +98,7 @@ def bruteforce():
 
 			except smtplib.SMTPAuthenticationError:
 				if (attempts >= 3):
+					print(Fore.WHITE + "[+] Reinitializing socket")
 					attempts = 1
 					smtp.quit()	
 					time.sleep(10)
