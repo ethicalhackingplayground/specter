@@ -107,6 +107,7 @@ def bruteforce():
 					smtp.ehlo()
 					smtp.starttls()
 					smtp.ehlo()
+					continue
 				else:
 
 					attempts = attempts + 1
