@@ -1,5 +1,5 @@
 # specter
-SMTP Password Bruteforcer
+Bruteforce Any SMTP Password
 
 ### Setup && Install
 
