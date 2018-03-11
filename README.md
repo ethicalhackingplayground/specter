@@ -24,7 +24,7 @@ Required Arguments:
   
   ## Examples
   
-  ****python specter.py --username "email" --wordlist "wordlist" --server "smtp server" --port "smtp port"
+ ****python specter.py --username "email" --wordlist "wordlist" --server "smtp server" --port "smtp port"
   
   
 
