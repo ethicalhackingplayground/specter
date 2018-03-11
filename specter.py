@@ -75,7 +75,7 @@ def bruteforce():
 			try:
 				# Print the attempts
 				print(Fore.WHITE + "----------------------------------------------------------") 
-				print(Fore.WHITE + "[+] " + Fore.RED + str(attempts) + Fore.WHITE + " Trying " + Fore.YELLOW + "'" + password + "'"  + Fore.WHITE + " against " + Fore.WHITE + args.u)
+				print(Fore.WHITE + "[+] " + Fore.RED + str(attempts) + "/3" + Fore.WHITE + " Trying " + Fore.YELLOW + "'" + password + "'"  + Fore.WHITE + " against " + Fore.WHITE + args.u)
 				print(Fore.WHITE + "----------------------------------------------------------") 
 										
 				# Attempt to login.
