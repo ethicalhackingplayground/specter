@@ -1,4 +1,4 @@
-# specter
+# specter.py
 Bruteforce Any SMTP Password
 
 ### Setup && Install
