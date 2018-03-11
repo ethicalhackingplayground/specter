@@ -12,17 +12,20 @@ Bruteforce Any SMTP Password
  **python specter.py -h**
 
 usage: specter.py [-h] --username U --wordlist W --server S --port P
+                  [--verbosity V]
 
 Brute forces SMTP Passwords
 
 optional arguments:
-  -h, --help    show this help message and exit
+  -h, --help     show this help message and exit
 
 Required Arguments:
   --username U
   --wordlist W
   --server S
   --port P
+  --verbosity V
+
   
   ## Examples
   
