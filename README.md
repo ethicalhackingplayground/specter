@@ -3,13 +3,13 @@ Bruteforce Any SMTP Password
 
 ### Setup && Install
 
- **python setup.py**
+ > **python setup.py**
  
  
 
 ### Usage
 
- **python specter.py -h**
+ > **python specter.py -h**
 
 usage: specter.py [-h] --username U --wordlist W --server S --port P
                   [--verbosity V]
@@ -29,7 +29,7 @@ Required Arguments:
   
   ## Examples
   
-> python specter.py --username "email" --wordlist "wordlist" --server "smtp server" --port "smtp port"
+> python specter.py --username "email" --wordlist "wordlist" --server "smtp server" --port "smtp port" --verbosity 1
 
 ### Problems
 Bruteforcing Gmail passwords is only possible if less secure apps is turned on, so you might need to use
